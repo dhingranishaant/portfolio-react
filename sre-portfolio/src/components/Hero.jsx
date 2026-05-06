@@ -55,7 +55,7 @@ const Hero = () => {
                     <span className="text-zinc-100">{profile.role}</span>
                     <span className="text-zinc-700">•</span>
                     <span className="text-zinc-500">status:</span>
-                    <span className="text-teal-300">{profile.metrics[1].value}</span>
+                    <span className="text-teal-300">{profile.metrics[2].value}</span>
                 </div>
 
                 <p className="mt-8 max-w-2xl text-lg text-zinc-400 leading-relaxed">{profile.shortBio}</p>
@@ -75,8 +75,8 @@ const Hero = () => {
                 <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-px bg-[#1f1f23] border border-[#1f1f23] rounded-lg overflow-hidden">
                     {[
                         { l: "focus", v: "reliability engineering" },
-                        { l: "work", v: "monitoring · automation" },
-                        { l: "style", v: "pragmatic" },
+                        { l: "work", v: "monitoring · alerting · automation" },
+                        { l: "style", v: "pragmatic · systems-first" },
                         { l: "reach", v: "email / LinkedIn" },
                     ].map((s) => (
                         <div key={s.l} className="bg-[#0d0d0f] px-5 py-4">
