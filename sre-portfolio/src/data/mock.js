@@ -13,7 +13,6 @@ export const profile = {
     socials: {
         github: "https://github.com/dhingranishaant",
         linkedin: "https://www.linkedin.com/in/nishaant-dhingra/",
-        twitter: "https://twitter.com/yourname",
         resume: "#",
     },
     metrics: [
@@ -32,10 +31,9 @@ export const stack = [
 
 export const experience = [
     {
-        company: "Company One",
-        role: "Senior Site Reliability Engineer",
-        period: "2023 — Present",
-        location: "Remote",
+        company: "Manulife",
+        role: "Site Reliability Engineer",
+        period: "July 2024 — Present",
         bullets: [
             "Owned platform reliability across 60+ services; defined SLOs that cut customer-impacting incidents by 42%.",
             "Designed multi-region failover for the core API, reaching 99.99% monthly availability.",
