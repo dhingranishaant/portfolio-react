@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dhingranishaant/portfolio-react/static/css/main.c9852cba.css",
+    "main.js": "/dhingranishaant/portfolio-react/static/js/main.8b2ca148.js",
+    "index.html": "/dhingranishaant/portfolio-react/index.html",
+    "main.c9852cba.css.map": "/dhingranishaant/portfolio-react/static/css/main.c9852cba.css.map",
+    "main.8b2ca148.js.map": "/dhingranishaant/portfolio-react/static/js/main.8b2ca148.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9852cba.css",
+    "static/js/main.8b2ca148.js"
+  ]
+}
