@@ -7,9 +7,9 @@ export const profile = {
     location: "Toronto",
     email: "hello@yourname.dev",
     shortBio:
-        "I build resilient, observable systems that stay up so engineers can sleep. Focused on Kubernetes, observability, incident response, and the quiet art of paving the paved road.",
+        "I work on making systems reliable and observable through better monitoring, alerting, and automation. Focused on reducing incident impact and improving how teams understand production behavior.",
     longBio:
-        "Site Reliability Engineer with a bias toward automation, blameless postmortems, and meaningful SLOs. I enjoy taming distributed systems, shrinking error budgets responsibly, and turning 3am pages into Tuesday morning runbooks.",
+        "Site Reliability Engineer focused on automation, observability, and building reliable systems. I work on monitoring, alerting, and automation to reduce incidents and make systems easier to operate and debug.",
     socials: {
         github: "https://github.com/dhingranishaant",
         linkedin: "https://www.linkedin.com/in/nishaant-dhingra/",
@@ -24,11 +24,11 @@ export const profile = {
 };
 
 export const stack = [
-    { group: "Orchestration", items: ["Kubernetes", "Helm", "Argo CD", "Istio", "Knative"] },
-    { group: "Observability", items: ["Prometheus", "Grafana", "Loki", "Tempo", "OpenTelemetry"] },
-    { group: "Cloud & IaC", items: ["AWS", "GCP", "Terraform", "Pulumi", "Crossplane"] },
-    { group: "CI/CD & Lang", items: ["GitHub Actions", "GitLab CI", "Go", "Python", "Bash"] },
-    { group: "Data & Streaming", items: ["PostgreSQL", "Redis", "Kafka", "ClickHouse", "NATS"] },
+    { group: "Languages", items: ["Python", "TypeScript", "JavaScript", "SQL", "Java"] },
+    { group: "Observability", items: ["New Relic", "Dynatrace", "Moogsoft", "xMatters"] },
+    { group: "Infrastructure & CI", items: ["Terraform", "Jenkins"] },
+    { group: "Monitoring", items: ["Synthetic monitoring", "Dashboards", "Alerting"] },
+    { group: "Developer Tools", items: ["Git", "Postman", "Bruno", "Jira"] },
 ];
 
 export const experience = [

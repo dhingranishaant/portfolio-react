@@ -25,16 +25,13 @@ const About = () => {
                 <div className="md:col-span-2 reveal">
                     <p className="text-zinc-300 text-lg leading-relaxed">{profile.longBio}</p>
                     <p className="mt-5 text-zinc-400 leading-relaxed">
-                        I care about <span className="text-teal-300">paved roads</span>,
-                        <span className="text-teal-300"> SLOs that mean something</span>, and the kind of automation that quietly removes whole categories of failure.
-                        When I&apos;m not in a Grafana tab, I&apos;m probably reading a postmortem, sketching a runbook, or arguing about the right number of nines.
+                        I like building systems that are <span className="text-teal-300">easy to operate</span> and <span className="text-teal-300">hard to break</span>. A lot of my work is around improving monitoring, cleaning up alerts, and automating the boring parts of running services.
+                        When things do break, I care more about getting to a clear <span className="text-teal-300">root cause</span> than adding process around it.
                     </p>
                     <div className="mt-8 grid sm:grid-cols-2 gap-3 mono text-sm">
                         {[
-                            { k: "focus", v: "reliability · observability · platform" },
-                            { k: "approach", v: "blameless · data-driven · boring tech" },
-                            { k: "ops", v: "on-call · incident command · postmortems" },
-                            { k: "writing", v: "runbooks · RFCs · design docs" },
+                            { k: "focus", v: "reliability · observability · systems" },
+                            { k: "approach", v: "keep it simple · data-driven · root cause fixes" },
                         ].map((item) => (
                             <div key={item.k} className="flex items-start gap-3 p-3 rounded-md bg-[#0d0d0f] border border-[#1f1f23]">
                                 <span className="text-teal-400">»</span>

@@ -44,7 +44,7 @@ const Hero = () => {
                         {profile.location}
                     </span>
                     <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-[#1f1f23] bg-[#111113]">
-                        <span className="text-zinc-600">utc</span>{time}
+                        <span className="text-zinc-600">est</span>{time}
                     </span>
                 </div>
 
