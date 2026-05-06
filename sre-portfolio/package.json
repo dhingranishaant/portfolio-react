@@ -2,7 +2,6 @@
     "name": "sre-portfolio",
     "version": "1.0.0",
     "private": true,
-    "homepage": "https://dhingranishaant.github.io/portfolio-react",
     "dependencies": {
         "@radix-ui/react-slot": "^1.2.0",
         "class-variance-authority": "^0.7.1",
@@ -20,9 +19,7 @@
     "scripts": {
         "start": "craco start",
         "build": "craco build",
-        "test": "craco test",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "test": "craco test"
     },
     "browserslist": {
         "production": [
@@ -39,7 +36,6 @@
     "devDependencies": {
         "@craco/craco": "^7.1.0",
         "autoprefixer": "^10.4.20",
-        "gh-pages": "^6.3.0",
         "postcss": "^8.4.49",
         "tailwindcss": "^3.4.17"
     }
