@@ -69,7 +69,7 @@ const Navbar = () => {
                 </nav>
 
                 <div className="hidden md:flex items-center gap-2 mono text-[11px] text-zinc-500">
-                    <Command className="w-3.5 h-3.5" />
+                    <Keyboard className="w-3.5 h-3.5" />
                     <span>press</span>
                     <span className="kbd">1</span><span>–</span><span className="kbd">5</span>
                 </div>

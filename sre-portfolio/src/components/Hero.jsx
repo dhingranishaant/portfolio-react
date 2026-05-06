@@ -75,8 +75,8 @@ const Hero = () => {
                 <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-px bg-[#1f1f23] border border-[#1f1f23] rounded-lg overflow-hidden">
                     {[
                         { l: "focus", v: "reliability engineering" },
-                        { l: "work", v: "monitoring · alerting · automation" },
-                        { l: "style", v: "pragmatic · systems-first" },
+                        { l: "work", v: "monitoring · automation" },
+                        { l: "style", v: "pragmatic" },
                         { l: "reach", v: "email / LinkedIn" },
                     ].map((s) => (
                         <div key={s.l} className="bg-[#0d0d0f] px-5 py-4">
