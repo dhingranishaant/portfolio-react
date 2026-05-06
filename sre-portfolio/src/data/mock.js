@@ -1,18 +1,18 @@
 // Placeholder content for the SRE portfolio. Edit freely.
 
 export const profile = {
-    name: "Your Name",
-    handle: "yourname",
+    name: "Nishaant Dhingra",
+    handle: "nish",
     role: "Site Reliability Engineer",
-    location: "Remote / Earth",
+    location: "Toronto",
     email: "hello@yourname.dev",
     shortBio:
         "I build resilient, observable systems that stay up so engineers can sleep. Focused on Kubernetes, observability, incident response, and the quiet art of paving the paved road.",
     longBio:
         "Site Reliability Engineer with a bias toward automation, blameless postmortems, and meaningful SLOs. I enjoy taming distributed systems, shrinking error budgets responsibly, and turning 3am pages into Tuesday morning runbooks.",
     socials: {
-        github: "https://github.com/yourname",
-        linkedin: "https://linkedin.com/in/yourname",
+        github: "https://github.com/dhingranishaant",
+        linkedin: "https://www.linkedin.com/in/nishaant-dhingra/",
         twitter: "https://twitter.com/yourname",
         resume: "#",
     },
