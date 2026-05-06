@@ -2,7 +2,7 @@
     "name": "sre-portfolio",
     "version": "1.0.0",
     "private": true,
-    "homepage": "https://dhingranishaant.github.io/sre-portfolio",
+    "homepage": "https://dhingranishaant.github.io/portfolio-react/",
     "dependencies": {
         "@radix-ui/react-slot": "^1.2.0",
         "class-variance-authority": "^0.7.1",
