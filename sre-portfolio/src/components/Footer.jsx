@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Twitter, ArrowUp } from "lucide-react";
+import { Github, Linkedin, ArrowUp } from "lucide-react";
 import { profile } from "../data/mock";
 
 const Footer = () => {
@@ -20,10 +20,6 @@ const Footer = () => {
                     <a href={profile.socials.linkedin} target="_blank" rel="noreferrer"
                        className="w-9 h-9 rounded-md border border-[#1f1f23] bg-[#111113] flex items-center justify-center text-zinc-400 hover:text-teal-300 hover:border-teal-500/60 transition-colors" aria-label="LinkedIn">
                         <Linkedin className="w-4 h-4" />
-                    </a>
-                    <a href={profile.socials.twitter} target="_blank" rel="noreferrer"
-                       className="w-9 h-9 rounded-md border border-[#1f1f23] bg-[#111113] flex items-center justify-center text-zinc-400 hover:text-teal-300 hover:border-teal-500/60 transition-colors" aria-label="Twitter">
-                        <Twitter className="w-4 h-4" />
                     </a>
                     <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                             className="inline-flex items-center gap-2 mono text-xs text-zinc-400 hover:text-teal-300 transition-colors">

@@ -13,7 +13,6 @@ export const profile = {
     socials: {
         github: "https://github.com/dhingranishaant",
         linkedin: "https://www.linkedin.com/in/nishaant-dhingra/",
-        twitter: "https://twitter.com/yourname",
         resume: "#",
     },
     metrics: [

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SectionHeader } from "./About";
 import { profile } from "../data/mock";
-import { Mail, Send, Github, Linkedin, Twitter, FileText } from "lucide-react";
+import { Mail, Send, Github, Linkedin, FileText } from "lucide-react";
 import { toast } from "sonner";
 
 const Contact = () => {
@@ -51,10 +51,6 @@ const Contact = () => {
                             <a href={profile.socials.linkedin} target="_blank" rel="noreferrer"
                                className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-[#1f1f23] bg-[#111113] text-sm text-zinc-300 hover:text-teal-300 hover:border-teal-500/50 transition-colors">
                                 <Linkedin className="w-4 h-4" /> linkedin
-                            </a>
-                            <a href={profile.socials.twitter} target="_blank" rel="noreferrer"
-                               className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-[#1f1f23] bg-[#111113] text-sm text-zinc-300 hover:text-teal-300 hover:border-teal-500/50 transition-colors">
-                                <Twitter className="w-4 h-4" /> twitter
                             </a>
                             <a href={profile.socials.resume}
                                className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-[#1f1f23] bg-[#111113] text-sm text-zinc-300 hover:text-teal-300 hover:border-teal-500/50 transition-colors">
