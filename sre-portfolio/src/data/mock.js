@@ -5,7 +5,7 @@ export const profile = {
     handle: "nish",
     role: "Site Reliability Engineer",
     location: "Toronto",
-    email: "hello@yourname.dev",
+    email: "hello@yourname.dev", //create new portfolio email
     shortBio:
         "I work on making systems reliable and observable through better monitoring, alerting, and automation. Focused on reducing incident impact and improving how teams understand production behavior.",
     longBio:
@@ -17,7 +17,6 @@ export const profile = {
         resume: "#",
     },
     metrics: [
-        { label: "uptime", value: "99.99%" },
         { label: "mttr", value: "< 12m" },
         { label: "on-call", value: "available" },
     ],

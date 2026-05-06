@@ -36,10 +36,6 @@ const Hero = () => {
                         <span className="text-teal-300">systems operational</span>
                     </span>
                     <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-[#1f1f23] bg-[#111113]">
-                        <Activity className="w-3 h-3 text-teal-400" />
-                        uptime {profile.metrics[0].value}
-                    </span>
-                    <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-[#1f1f23] bg-[#111113]">
                         <MapPin className="w-3 h-3" />
                         {profile.location}
                     </span>
@@ -78,10 +74,10 @@ const Hero = () => {
 
                 <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-px bg-[#1f1f23] border border-[#1f1f23] rounded-lg overflow-hidden">
                     {[
-                        { l: "availability", v: profile.metrics[0].value },
-                        { l: "mttr", v: profile.metrics[1].value },
-                        { l: "on-call", v: profile.metrics[2].value },
-                        { l: "error budget", v: "healthy" },
+                        { l: "focus", v: "reliability engineering" },
+                        { l: "work", v: "monitoring · alerting · automation" },
+                        { l: "style", v: "pragmatic · systems-first" },
+                        { l: "reach", v: "email / LinkedIn" },
                     ].map((s) => (
                         <div key={s.l} className="bg-[#0d0d0f] px-5 py-4">
                             <div className="mono text-[11px] uppercase tracking-wider text-zinc-500">{s.l}</div>
