@@ -55,7 +55,7 @@ const Hero = () => {
                     <span className="text-zinc-100">{profile.role}</span>
                     <span className="text-zinc-700">•</span>
                     <span className="text-zinc-500">status:</span>
-                    <span className="text-teal-300">{profile.metrics[2].value}</span>
+                    <span className="text-teal-300">{profile.metrics[1].value}</span>
                 </div>
 
                 <p className="mt-8 max-w-2xl text-lg text-zinc-400 leading-relaxed">{profile.shortBio}</p>
