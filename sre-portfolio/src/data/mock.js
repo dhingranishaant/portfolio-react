@@ -7,12 +7,13 @@ export const profile = {
     location: "Toronto",
     email: "hello@yourname.dev", //create new portfolio email
     shortBio:
-        "Computer Science graduate from York University (BSc Hons, May 2024), focused on building reliable and scalable software systems. Currently working in Site Reliability Engineering, with hands-on experience in monitoring, alerting, and production support systems. Interested in improving system reliability, reducing operational complexity, and working on impactful engineering problems in large-scale environments.",
+        "I work on making systems reliable and observable through better monitoring, alerting, and automation. Focused on reducing incident impact and improving how teams understand production behavior.",
     longBio:
         "Site Reliability Engineer focused on automation, observability, and building reliable systems. I work on monitoring, alerting, and automation to reduce incidents and make systems easier to operate and debug.",
     socials: {
         github: "https://github.com/dhingranishaant",
         linkedin: "https://www.linkedin.com/in/nishaant-dhingra/",
+        twitter: "https://twitter.com/yourname",
         resume: "#",
     },
     metrics: [
@@ -31,9 +32,10 @@ export const stack = [
 
 export const experience = [
     {
-        company: "Manulife",
-        role: "Site Reliability Engineer",
-        period: "July 2024 — Present",
+        company: "Company One",
+        role: "Senior Site Reliability Engineer",
+        period: "2023 — Present",
+        location: "Remote",
         bullets: [
             "Owned platform reliability across 60+ services; defined SLOs that cut customer-impacting incidents by 42%.",
             "Designed multi-region failover for the core API, reaching 99.99% monthly availability.",
