@@ -20,9 +20,6 @@ const Education = () => {
                                 <div className="flex items-start justify-between gap-3">
                                     <h3 className="heading-font text-xl text-zinc-100">{ed.school}</h3>
                                     <span className="mono text-[11px] text-zinc-500 whitespace-nowrap pt-1">{ed.period}</span>
-                                    <div className="mono text-[11px] text-zinc-500 inline-flex items-center gap-1 mt-1">
-                                            <MapPin className="w-3 h-3" />{ed.location}
-                                    </div>
                                 </div>
                                 <div className="mono text-sm text-teal-300 mt-1">{ed.degree}</div>
                                 <p className="mt-3 text-sm text-zinc-400 leading-relaxed">{ed.details}</p>
