@@ -88,7 +88,7 @@ export const education = [
   {
     school: "K. R. Mangalam World School",
     degree: "High School",
-    period: "2017 — 2018",
+    period: "2017 — 2019",
     details:
       "Studied physics, chemistry, mathematics, and computer science (C++)",
   },
