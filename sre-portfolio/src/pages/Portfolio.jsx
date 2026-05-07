@@ -35,7 +35,6 @@ const Portfolio = () => {
     return (
         <div className="relative min-h-screen bg-[#0a0a0b] text-zinc-200">
             <Navbar />
-            // inside the JSX, anywhere at top level:
             <ScrollProgress />
             <main>
                 <Hero />
