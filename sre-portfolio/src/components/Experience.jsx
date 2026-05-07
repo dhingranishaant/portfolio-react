@@ -6,7 +6,7 @@ import { Briefcase, MapPin } from "lucide-react";
 const Experience = () => {
     return (
         <section id="experience" className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <SectionHeader index={3} title="Experience" caption="// chronological / most recent first" />
+            <SectionHeader index={3} title="Experience" caption="// latest work first" />
             <div className="relative">
                 <div aria-hidden className="absolute left-4 md:left-5 top-2 bottom-2 w-px"
                      style={{ background: "linear-gradient(180deg, rgba(20,184,166,0.5), rgba(31,31,35,0.6) 30%, rgba(31,31,35,0.6))" }} />

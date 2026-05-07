@@ -39,7 +39,7 @@ const Projects = () => {
             id="projects"
             className="relative max-w-6xl mx-auto px-6 py-20 md:py-28"
         >
-            <SectionHeader index={4} title="Projects" caption="// shipped & shipping" />
+            <SectionHeader index={4} title="Projects" caption="// spare-time builds" />
 
             {/* Filter chips */}
             <div className="mb-8 flex flex-wrap items-center gap-2">

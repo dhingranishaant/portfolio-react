@@ -6,7 +6,7 @@ import { GraduationCap, Award } from "lucide-react";
 const Education = () => {
     return (
         <section id="education" className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <SectionHeader index={2} title="Education" caption="// formal & continuous" />
+            <SectionHeader index={2} title="Education" caption="// academic background" />
             <div className="grid md:grid-cols-2 gap-5">
                 {education.map((ed, idx) => (
                     <div key={ed.school}
