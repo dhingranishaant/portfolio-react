@@ -10,6 +10,9 @@ import Footer from "../components/Footer";
 import KeyboardHints from "../components/KeyboardHints";
 import useKeyboardNav from "../hooks/useKeyboardNav";
 import { navItems } from "../data/mock";
+import ScrollProgress from "../components/ScrollProgress";
+// inside the JSX, anywhere at top level:
+<ScrollProgress />
 
 const Portfolio = () => {
     useKeyboardNav(navItems);
