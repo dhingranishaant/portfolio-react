@@ -82,6 +82,7 @@ export const education = [
     school: "York University",
     degree: "Bachelor of Science with Honours in Computer Science",
     period: "2019 — 2024",
+    location: "Toronto",
     details:
       "Focused on software engineering, systems, databases, and algorithms.",
   },
@@ -89,6 +90,7 @@ export const education = [
     school: "K. R. Mangalam World School",
     degree: "High School",
     period: "2017 — 2019",
+    location: "New Delhi",
     details:
       "Studied physics, chemistry, mathematics, and computer science (C++)",
   },
