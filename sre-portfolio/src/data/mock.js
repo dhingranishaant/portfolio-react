@@ -150,3 +150,11 @@ export const navItems = [
   { id: "projects", label: "Projects", key: "4" },
   { id: "contact", label: "Contact", key: "5" },
 ];
+
+export const projectStatuses = [
+    "all",
+    "personal",
+    "professional",
+    "experimental",
+    "academic",
+];
