@@ -42,6 +42,7 @@ export const experience = [
     company: "Manulife | Full-time",
     role: "Site Reliability Engineer",
     period: "July 2024 — Present",
+    location: "Toronto",
     bullets: [
       "Built and maintained New Relic observability stack, including synthetic monitors, alert policies, and dashboarding for production services.",
       "Configured incident alerting workflows using Moogsoft and xMatters for paging, escalation, and situation creation.",
@@ -54,6 +55,7 @@ export const experience = [
     company: "Manulife | Co-op",
     role: "Platform Engineer",
     period: "September 2023 — December 2023",
+    location: "Toronto",
     bullets: [
       "Built and maintained browser and HTTP synthetic monitoring scripts using Dynatrace and New Relic to improve observability and incident detection.",
       "Developed and deployed a Python automation solution that reduced manual operational workload by 95% and became part of daily production workflows.",
@@ -65,6 +67,7 @@ export const experience = [
     company: "SOTI | Co-op",
     role: "Software Developer",
     period: "May 2022 — April 2023",
+    location: "Mississauga",
     bullets: [
       "Collaborated with cross-functional teams in an agile environment to develop and deliver new application features across frontend and backend systems.",
       "Built Single Page Application functionality using Angular, Redux, C#, and SQL while contributing through feature development, code reviews, and unit testing.",
@@ -81,6 +84,13 @@ export const education = [
     period: "2019 — 2024",
     details:
       "Focused on software engineering, systems, databases, and algorithms.",
+  },
+  {
+    school: "K. R. Mangalam World School",
+    degree: "High School",
+    period: "2017 — 2018",
+    details:
+      "Studied physics, chemistry, mathematics, and computer science (C++)",
   },
 ];
 

@@ -123,9 +123,6 @@ const Projects = () => {
                             </div>
 
                             <div className="mt-5 pt-4 border-t border-[#1f1f23] flex items-center justify-between">
-                                <span className="mono text-[11px] text-zinc-500">
-                                    v1.0.0
-                                </span>
                                 <span className="inline-flex items-center gap-1.5 mono text-[11px] text-zinc-400 group-hover:text-teal-300 transition-colors">
                                     view
                                     <ExternalLink className="w-3.5 h-3.5" />
