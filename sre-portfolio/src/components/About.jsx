@@ -20,7 +20,7 @@ const SectionHeader = ({ index, title, caption }) => (
 const About = () => {
     return (
         <section id="about" className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <SectionHeader index={1} title="About" caption="// the human behind the pager" />
+            <SectionHeader index={1} title="About" caption="// the human behind the systems" />
             <div className="grid md:grid-cols-3 gap-10">
                 <div className="md:col-span-2 reveal">
                     <p className="text-zinc-300 text-lg leading-relaxed">{profile.longBio}</p>

@@ -38,7 +38,7 @@ const Contact = () => {
                         <div className="mono text-xs text-zinc-500"><span className="text-teal-400">$</span> ./say-hi.sh</div>
                         <h3 className="heading-font text-2xl text-zinc-100 mt-3">Let&apos;s build something reliable.</h3>
                         <p className="mt-3 text-sm text-zinc-400 leading-relaxed">
-                            Open to senior SRE / platform roles, advisory work, and interesting reliability problems. Async-friendly.
+                            Open to SRE and platform roles. Happy to connect and chat about systems or opportunities. 📬
                         </p>
                         <a href={`mailto:${profile.email}`} className="mt-6 inline-flex items-center gap-2 mono text-sm text-teal-300 hover:text-teal-200 transition-colors">
                             <Mail className="w-4 h-4" />{profile.email}
@@ -64,12 +64,12 @@ const Contact = () => {
                     <div className="grid sm:grid-cols-2 gap-4">
                         <div>
                             <label className="mono text-[11px] uppercase tracking-wider text-zinc-500">name</label>
-                            <input name="name" value={form.name} onChange={handleChange} placeholder="jane doe"
+                            <input name="name" value={form.name} onChange={handleChange} placeholder="your name"
                                    className="mt-1 w-full bg-[#111113] border border-[#1f1f23] rounded-md px-3 py-2.5 text-sm text-zinc-100 placeholder:text-zinc-600 focus:outline-none focus:border-teal-500/60 focus:ring-2 focus:ring-teal-500/20 transition-colors" />
                         </div>
                         <div>
                             <label className="mono text-[11px] uppercase tracking-wider text-zinc-500">email</label>
-                            <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="jane@company.com"
+                            <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="your email"
                                    className="mt-1 w-full bg-[#111113] border border-[#1f1f23] rounded-md px-3 py-2.5 text-sm text-zinc-100 placeholder:text-zinc-600 focus:outline-none focus:border-teal-500/60 focus:ring-2 focus:ring-teal-500/20 transition-colors" />
                         </div>
                     </div>
