@@ -5,7 +5,7 @@ import { ExternalLink, GitBranch } from "lucide-react";
 
 const statusColor = (status) => {
     switch (status) {
-        case "production": return "text-teal-300 border-teal-500/40 bg-teal-500/5";
+        case "personal": return "text-teal-300 border-teal-500/40 bg-teal-500/5";
         case "professional": return "text-sky-300 border-sky-500/30 bg-sky-500/5";
         case "experimental": return "text-amber-300 border-amber-500/30 bg-amber-500/5";
         case "academic": return "text-zinc-300 border-zinc-600/40 bg-zinc-700/10";

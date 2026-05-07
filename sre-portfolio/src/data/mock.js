@@ -106,7 +106,7 @@ export const projects = [
     summary:
       "Personal portfolio website built to showcase projects, experience, and technical skills through a modern responsive interface with custom UI components and smooth navigation.",
     stack: ["React", "JavaScript", "Tailwind CSS", "CRACO", "GitHub Pages"],
-    status: "experimental",
+    status: "personal",
     link: "https://github.com/dhingranishaant/portfolio-react",
   },
   {
@@ -122,7 +122,7 @@ export const projects = [
     summary:
       "Java-based transcript generation system that processes student records, calculates GPAs, and generates unofficial transcripts using object-oriented programming principles.",
     stack: ["Java", "JUnit", "Eclipse"],
-    status: "experimental",
+    status: "personal",
     link: "https://github.com/dhingranishaant/Transcript",
   },
   {
