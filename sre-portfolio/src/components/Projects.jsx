@@ -6,9 +6,9 @@ import { ExternalLink, GitBranch } from "lucide-react";
 const statusColor = (status) => {
     switch (status) {
         case "production": return "text-teal-300 border-teal-500/40 bg-teal-500/5";
-        case "open-source": return "text-sky-300 border-sky-500/30 bg-sky-500/5";
+        case "internship": return "text-sky-300 border-sky-500/30 bg-sky-500/5";
         case "experimental": return "text-amber-300 border-amber-500/30 bg-amber-500/5";
-        case "internal": return "text-zinc-300 border-zinc-600/40 bg-zinc-700/10";
+        case "academic": return "text-zinc-300 border-zinc-600/40 bg-zinc-700/10";
         default: return "text-zinc-300 border-zinc-700 bg-zinc-800/40";
     }
 };
@@ -38,7 +38,6 @@ const Projects = () => {
                             ))}
                         </div>
                         <div className="mt-5 pt-4 border-t border-[#1f1f23] flex items-center justify-between">
-                            <span className="mono text-[11px] text-zinc-500">v1.0.0</span>
                             <span className="inline-flex items-center gap-1.5 mono text-[11px] text-zinc-400 group-hover:text-teal-300 transition-colors">
                                 view <ExternalLink className="w-3.5 h-3.5" />
                             </span>
