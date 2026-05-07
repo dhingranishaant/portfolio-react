@@ -53,7 +53,7 @@ const Hero = () => {
 
                 <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 mono text-sm">
                     <span className="text-zinc-500">role:</span>
-                    <span className="text-zinc-700">•</span>
+                    {/* <span className="text-zinc-700">•</span> */}
                     <span className="text-zinc-100">{profile.role}</span>
                     {/* <span className="text-zinc-700">•</span>
                     <span className="text-zinc-500">status:</span>
