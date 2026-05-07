@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ArrowRight, Activity, MapPin, Mail } from "lucide-react";
 import { profile } from "../data/mock";
+import Magnetic from "./Magnetic";
 
 const Hero = () => {
     const [time, setTime] = useState("");
@@ -62,9 +63,9 @@ const Hero = () => {
                 <p className="mt-8 max-w-2xl text-lg text-zinc-400 leading-relaxed">{profile.shortBio}</p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-3">
-                    <button onClick={scrollTo("projects")} className="group inline-flex items-center gap-2 px-5 py-3 rounded-md bg-teal-500 text-zinc-950 font-medium hover:bg-teal-400 teal-glow transition-colors">
+                    <Magnetic onClick={scrollTo("projects")} className="group inline-flex items-center gap-2 px-5 py-3 rounded-md bg-teal-500 text-zinc-950 font-medium hover:bg-teal-400 teal-glow transition-colors">
                         view projects <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
-                    </button>
+                    </Magnetic>
                     <button onClick={scrollTo("contact")} className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-transparent text-zinc-200 border border-[#2a2a31] hover:border-teal-500/60 hover:text-teal-300 transition-colors">
                         <Mail className="w-4 h-4" /> get in touch
                     </button>
