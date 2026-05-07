@@ -31,66 +31,75 @@ export const stack = [
 
 export const experience = [
     {
-        company: "Company One",
-        role: "Senior Site Reliability Engineer",
-        period: "2023 — Present",
-        location: "Remote",
-        bullets: [
-            "Owned platform reliability across 60+ services; defined SLOs that cut customer-impacting incidents by 42%.",
-            "Designed multi-region failover for the core API, reaching 99.99% monthly availability.",
-            "Led the migration from VMs to Kubernetes with progressive delivery via Argo Rollouts.",
-        ],
-        tags: ["Kubernetes", "SLOs", "Argo", "Terraform"],
-    },
-    {
-        company: "Company Two",
+        company: "Manulife | Full-time",
         role: "Site Reliability Engineer",
-        period: "2021 — 2023",
-        location: "Hybrid",
+        period: "July 2024 — Present",
         bullets: [
-            "Built golden-path CI/CD for 80+ microservices; deploys went from weekly to on-demand.",
-            "Implemented OpenTelemetry pipeline (Tempo + Loki + Mimir) cutting MTTR by ~55%.",
-            "Instituted blameless postmortems and an internal incident command framework.",
+            "Built and maintained New Relic observability stack, including synthetic monitors, alert policies, and dashboarding for production services.",
+            "Configured incident alerting workflows using Moogsoft and xMatters for paging, escalation, and situation creation.",
+            "Investigated production issues raised via Jira tickets, performing root-cause analysis and coordinating remediation with engineering teams.",
+            "Tuned monitoring and alerting signals to reduce noise and improve actionable incident detection.",
         ],
-        tags: ["OpenTelemetry", "GitOps", "Observability"],
+        tags: ["New Relic", "Moogsoft", "xMatters", "Python"],
     },
     {
-        company: "Company Three",
-        role: "DevOps Engineer",
-        period: "2019 — 2021",
-        location: "On-site",
+        company: "Manulife | Co-op",
+        role: "Platform Engineer",
+        period: "September 2023 — December 2023",
         bullets: [
-            "Automated infra provisioning across AWS using Terraform modules and policy-as-code (OPA).",
-            "Hardened CI pipelines and introduced ephemeral preview environments for every PR.",
-            "Reduced cloud spend by 28% via right-sizing, autoscaling and Spot fleet adoption.",
+            "Built and maintained browser and HTTP synthetic monitoring scripts using Dynatrace and New Relic to improve observability and incident detection.",
+            "Developed and deployed a Python automation solution that reduced manual operational workload by 95% and became part of daily production workflows.",
+            "Contributed to large-scale synthetic migration efforts from Dynatrace to New Relic while helping establish monitoring best practices that improved incident response efficiency.",
         ],
-        tags: ["AWS", "Terraform", "OPA", "CI/CD"],
+        tags: ["New Relic", "Dynatrace", "xMatters", "PRTG", "Python"],
+    },
+    {
+        company: "SOTI | Co-op",
+        role: "Software Developer",
+        period: "May 2022 — April 2023",
+        bullets: [
+            "Collaborated with cross-functional teams in an agile environment to develop and deliver new application features across frontend and backend systems.",
+            "Built Single Page Application functionality using Angular, Redux, C#, and SQL while contributing through feature development, code reviews, and unit testing.",
+            "Improved application reliability and code quality by increasing unit test coverage by 15% and working closely with product managers to align features with customer requirements.",
+        ],
+        tags: ["Typescript", "Angular", "Java", "C#", "SQL"],
     },
 ];
 
 export const education = [
     {
-        school: "University Placeholder",
-        degree: "B.Sc. in Computer Science",
-        period: "2015 — 2019",
-        details: "Distributed systems, networks, operating systems. Capstone on consensus algorithms and Raft.",
-    },
-    {
-        school: "Continuous Learning",
-        degree: "Certifications",
-        period: "Ongoing",
-        details: "CKA · CKAD · AWS SAA · HashiCorp Terraform Associate · Google Cloud Professional Cloud Architect.",
-    },
+        school: "York University",
+        degree: "B.Sc. Honors in Computer Science",
+        period: "2019 — 2024",
+        details: "Focused on software engineering, systems, databases, and algorithms.",    }
 ];
 
 export const projects = [
-    { title: "runbook-as-code", summary: "Declarative incident runbooks compiled from YAML to executable workflows with Slack-driven triggers.", stack: ["Go", "Temporal", "Slack API"], status: "production", link: "#" },
-    { title: "slo-forge", summary: "Generates Prometheus recording & alerting rules from SLO definitions; multi-burn-rate out of the box.", stack: ["Python", "Prometheus", "Jsonnet"], status: "open-source", link: "#" },
-    { title: "chaos-lite", summary: "Tiny chaos engineering controller for Kubernetes — pod kill, network latency, and CPU squeeze.", stack: ["Go", "K8s Operator", "eBPF"], status: "experimental", link: "#" },
-    { title: "otel-bootstrap", summary: "Opinionated OpenTelemetry collector starter for traces, metrics and logs with batteries included.", stack: ["OTel", "Tempo", "Loki", "Mimir"], status: "production", link: "#" },
-    { title: "toil-tracker", summary: "Lightweight tracker for engineering toil; Grafana dashboards highlight where automation pays off.", stack: ["Go", "PostgreSQL", "Grafana"], status: "internal", link: "#" },
-    { title: "k8s-paved-road", summary: "Helm + Argo CD reference architecture for new services with built-in dashboards and SLOs.", stack: ["Helm", "Argo CD", "Kustomize"], status: "open-source", link: "#" },
-];
+    {
+      title: "techtronix",
+      summary:
+        "Full-stack e-commerce web application built with JSP featuring shopping cart, checkout flow, and admin sales/order management capabilities.",
+      stack: ["Java Servlets", "HTML", "CSS", "JavaScript", "SQL"],
+      status: "academic",
+      link: "#",
+    },
+    {
+      title: "eazy-survey",
+      summary:
+        "Survey management platform developed in a team environment allowing administrators to create surveys and users to complete them through a responsive web interface.",
+      stack: ["Angular", "TypeScript", "C#", "SQL", "Entity Framework"],
+      status: "internship",
+      link: "#",
+    },
+    {
+      title: "personal-portfolio",
+      summary:
+        "Personal portfolio website focused on responsive UI design and smooth user experience with interactive navigation and modern frontend styling.",
+      stack: ["HTML5", "CSS", "Bootstrap", "JavaScript", "GitHub"],
+      status: "experimental",
+      link: "#",
+    },
+  ];
 
 export const navItems = [
     { id: "about", label: "About", key: "1" },
