@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Terminal, Command } from "lucide-react";
+import { Terminal, Command, Sun, Moon } from "lucide-react";
 import { navItems, profile } from "../data/mock";
+import useTheme from "../hooks/useTheme.js";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [active, setActive] = useState("about");
+    const { theme, toggle } = useTheme();
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 8);
@@ -68,11 +70,31 @@ const Navbar = () => {
                     })}
                 </nav>
 
-                <div className="hidden md:flex items-center gap-2 mono text-[11px] text-zinc-500">
-                    <span>press</span>
-                    <span className="kbd">1</span><span>–</span><span className="kbd">5</span>
+                <div className="hidden md:flex items-center gap-3 mono text-[11px] text-zinc-500">
+                    <div className="flex items-center gap-2">
+                        <span>press</span>
+                        <span className="kbd">1</span><span>–</span><span className="kbd">5</span>
+                    </div>
+                    <button
+                        onClick={toggle}
+                        aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+                        title={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+                        className="relative w-9 h-9 rounded-md border border-[#1f1f23] bg-[#111113] flex items-center justify-center text-zinc-400 hover:text-teal-300 hover:border-teal-500/60 transition-colors overflow-hidden">
+                        <span className="absolute inset-0 flex items-center justify-center">
+                            {theme === "dark" ? (
+                                <Moon
+                                    key="moon"
+                                    className="w-4 h-4 theme-toggle-icon is-entering"
+                                />
+                            ) : (
+                                <Sun
+                                    key="sun"
+                                    className="w-4 h-4 theme-toggle-icon is-entering"
+                                />
+                            )}
+                        </span>
+                    </button>
                 </div>
-
                 <nav className="md:hidden flex items-center gap-3 mono text-xs">
                     {navItems.map((item) => (
                         <a key={item.id} href={`#${item.id}`} onClick={(e) => handleClick(e, item.id)}
@@ -80,6 +102,12 @@ const Navbar = () => {
                             {item.key}
                         </a>
                     ))}
+                    <button
+                        onClick={toggle}
+                        aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+                        className="ml-1 w-8 h-8 rounded-md border border-[#1f1f23] bg-[#111113] flex items-center justify-center text-zinc-400 hover:text-teal-300 transition-colors">
+                        {theme === "dark" ? <Moon className="w-3.5 h-3.5" /> : <Sun className="w-3.5 h-3.5" />}
+                    </button>
                 </nav>
             </div>
         </header>
