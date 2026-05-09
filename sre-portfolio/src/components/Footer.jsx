@@ -2,11 +2,11 @@ import React from "react";
 import { Github, Linkedin, ArrowUp } from "lucide-react";
 import { profile } from "../data/mock";
 
-const Footer = () => {
+const Footer = ({theme}) => {
     return (
         <footer className="relative border-t border-[#1f1f23] bg-[#0a0a0b]">
             <div className="absolute inset-x-0 top-0 h-px"
-                 style={{ background: "linear-gradient(90deg, transparent, rgba(20,184,166,0.4), transparent)" }} />
+                 style={{ background: theme === "dark" ? "linear-gradient(90deg, transparent, rgba(20,184,166,0.5), transparent)" : "linear-gradient(90deg, transparent, rgba(249,115,22,0.5), transparent)" }} />
             <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div className="mono text-xs text-zinc-500 leading-6">
                     <div><span className="text-teal-400">$</span> echo "thanks for stopping by"</div>

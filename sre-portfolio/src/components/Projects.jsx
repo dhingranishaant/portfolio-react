@@ -18,7 +18,7 @@ const statusColor = (status) => {
     }
 };
 
-const Projects = () => {
+const Projects = ({theme}) => {
     const [filter, setFilter] = useState("all");
 
     const counts = useMemo(() => {
@@ -39,7 +39,7 @@ const Projects = () => {
             id="projects"
             className="relative max-w-6xl mx-auto px-6 py-20 md:py-28"
         >
-            <SectionHeader index={4} title="Projects" caption="// spare-time builds" />
+            <SectionHeader index={4} title="Projects" caption="// spare-time builds" theme={theme}/>
 
             {/* Filter chips */}
             <div className="mb-8 flex flex-wrap items-center gap-2">

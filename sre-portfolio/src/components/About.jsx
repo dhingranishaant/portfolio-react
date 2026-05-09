@@ -2,7 +2,7 @@ import React from "react";
 import { profile, stack } from "../data/mock";
 import { Cpu } from "lucide-react";
 
-const SectionHeader = ({ index, title, caption }) => (
+const SectionHeader = ({ index, title, caption, theme }) => (
     <div className="mb-10 reveal">
         <div className="mono text-xs text-zinc-500 mb-2">
             <span className="text-teal-400">$</span> cat sections/{title.toLowerCase()}.md
@@ -13,14 +13,14 @@ const SectionHeader = ({ index, title, caption }) => (
             </h2>
             {caption ? <span className="hidden md:block mono text-xs text-zinc-500">{caption}</span> : null}
         </div>
-        <div className="mt-4 h-px w-full" style={{ background: "linear-gradient(90deg, rgba(20,184,166,0.4), rgba(31,31,35,0.6) 30%, transparent)" }} />
+        <div className="mt-4 h-px w-full" style={{ background: theme === "dark" ? "linear-gradient(90deg, transparent, rgba(20,184,166,0.5), transparent)" : "linear-gradient(90deg, transparent, rgba(249,115,22,0.5), transparent)" }} />
     </div>
 );
 
-const About = () => {
+const About = ({theme}) => {
     return (
         <section id="about" className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <SectionHeader index={1} title="About" caption="// the human behind the systems" />
+            <SectionHeader index={1} title="About" caption="// the human behind the systems" theme={theme}/>
             <div className="grid md:grid-cols-3 gap-10">
                 <div className="md:col-span-2 reveal">
                     <p className="text-zinc-300 text-lg leading-relaxed">{profile.longBio}</p>

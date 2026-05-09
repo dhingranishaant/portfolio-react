@@ -3,7 +3,7 @@ import { ArrowRight, Activity, MapPin, Mail } from "lucide-react";
 import { profile } from "../data/mock";
 import Magnetic from "./Magnetic";
 
-const Hero = () => {
+const Hero = ({ theme }) => {
     const [time, setTime] = useState("");
 
     useEffect(() => {
@@ -23,9 +23,10 @@ const Hero = () => {
 
     return (
         <section id="top" className="relative overflow-hidden">
-            <div className="absolute inset-0 dot-grid opacity-70" />
+            <div className="absolute inset-0 dot-grid opacity-90" />
             <div className="absolute inset-0 hero-radial" />
-            <div className="absolute inset-x-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(20,184,166,0.5), transparent)" }} />
+            <div className="absolute inset-x-0 top-0 h-px" style={{ background: theme === "dark" ? "linear-gradient(90deg, transparent, rgba(20,184,166,0.5), transparent)" : "linear-gradient(90deg, transparent, rgba(249,115,22,0.5), transparent)" }} />
+            {/* change above line for below nav color */}
 
             <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-28 md:pt-32 md:pb-36">
                 <div className="flex flex-wrap items-center gap-3 mono text-[11px] text-zinc-500">

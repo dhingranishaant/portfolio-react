@@ -11,9 +11,11 @@ import KeyboardHints from "../components/KeyboardHints";
 import useKeyboardNav from "../hooks/useKeyboardNav";
 import { navItems } from "../data/mock";
 import ScrollProgress from "../components/ScrollProgress";
+import useTheme from "../hooks/useTheme";
 
 const Portfolio = () => {
     useKeyboardNav(navItems);
+    const { theme, toggle } = useTheme();
 
     useEffect(() => {
         const els = document.querySelectorAll(".reveal");
@@ -34,17 +36,17 @@ const Portfolio = () => {
 
     return (
         <div className="relative min-h-screen bg-[#0a0a0b] text-zinc-200">
-            <Navbar />
-            <ScrollProgress />
+            <Navbar theme={theme} toggle={toggle} />
+            <ScrollProgress theme={theme} />
             <main>
-                <Hero />
-                <About />
-                <Education />
-                <Experience />
-                <Projects />
-                <Contact />
+                <Hero theme={theme} />
+                <About theme={theme} />
+                <Education theme={theme}/>
+                <Experience theme={theme}/>
+                <Projects theme={theme}/>
+                <Contact theme={theme}/>
             </main>
-            <Footer />
+            <Footer theme={theme}/>
             <KeyboardHints />
         </div>
     );

@@ -4,7 +4,7 @@ import { profile } from "../data/mock";
 import { Mail, Send, Github, Linkedin, FileText } from "lucide-react";
 import { toast } from "sonner";
 
-const Contact = () => {
+const Contact = ({theme}) => {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
     const [submitting, setSubmitting] = useState(false);
 
@@ -31,7 +31,7 @@ const Contact = () => {
 
     return (
         <section id="contact" className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <SectionHeader index={5} title="Contact" caption="// pager-friendly channels" />
+            <SectionHeader index={5} title="Contact" caption="// pager-friendly channels" theme={theme}/>
             <div className="grid md:grid-cols-5 gap-6">
                 <div className="md:col-span-2 reveal">
                     <div className="p-6 rounded-lg bg-[#0d0d0f] border border-[#1f1f23] h-full">

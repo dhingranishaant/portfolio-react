@@ -3,10 +3,9 @@ import { Terminal, Command, Sun, Moon } from "lucide-react";
 import { navItems, profile } from "../data/mock";
 import useTheme from "../hooks/useTheme.js";
 
-const Navbar = () => {
+const Navbar = ({ theme, toggle }) => {
     const [scrolled, setScrolled] = useState(false);
     const [active, setActive] = useState("about");
-    const { theme, toggle } = useTheme();
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 8);

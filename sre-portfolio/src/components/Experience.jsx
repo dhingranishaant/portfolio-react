@@ -3,13 +3,16 @@ import { SectionHeader } from "./About";
 import { experience } from "../data/mock";
 import { Briefcase, MapPin } from "lucide-react";
 
-const Experience = () => {
+const Experience = ({theme}) => {
     return (
         <section id="experience" className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <SectionHeader index={3} title="Experience" caption="// latest work first" />
+            <SectionHeader index={3} title="Experience" caption="// latest work first" theme={theme}/>
             <div className="relative">
                 <div aria-hidden className="absolute left-4 md:left-5 top-2 bottom-2 w-px"
-                     style={{ background: "linear-gradient(180deg, rgba(20,184,166,0.5), rgba(31,31,35,0.6) 30%, rgba(31,31,35,0.6))" }} />
+                     style={{ background:
+                        theme === "dark"
+                          ? "linear-gradient(90deg, transparent, rgba(20,184,166,0.5), transparent)"
+                          : "linear-gradient(90deg, transparent, rgba(249,115,22,0.5), transparent)"}} />
                 <ol className="space-y-8">
                     {experience.map((exp, idx) => (
                         <li key={exp.company} className="relative pl-12 md:pl-14 reveal" style={{ transitionDelay: `${idx * 80}ms` }}>

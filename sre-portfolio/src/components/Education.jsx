@@ -3,10 +3,10 @@ import { SectionHeader } from "./About";
 import { education } from "../data/mock";
 import { GraduationCap, Award } from "lucide-react";
 
-const Education = () => {
+const Education = ({theme}) => {
     return (
         <section id="education" className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
-            <SectionHeader index={2} title="Education" caption="// academic background" />
+            <SectionHeader index={2} title="Education" caption="// academic background" theme={theme}/>
             <div className="grid md:grid-cols-2 gap-5">
                 {education.map((ed, idx) => (
                     <div key={ed.school}

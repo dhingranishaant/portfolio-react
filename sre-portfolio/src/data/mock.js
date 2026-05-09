@@ -80,17 +80,17 @@ export const experience = [
 export const education = [
   {
     school: "York University",
-    degree: "Bachelor of Science with Honours in Computer Science",
-    period: "2019 — 2024 | Toronto, Canada",
+    degree: "BSc (Hons) in Computer Science",
+    period: "2019 — 2024 | Toronto",
     details:
       "Focused on software engineering, systems, databases, and algorithms.",
   },
   {
     school: "K. R. Mangalam World School",
     degree: "High School",
-    period: "2017 — 2019 | New Delhi, India",
+    period: "2017 — 2019 | New Delhi",
     details:
-      "Studied physics, chemistry, mathematics, and computer science (C++)",
+      "Studied physics, chemistry, mathematics, and computer science (C++).",
   },
 ];
 
