@@ -1,6 +1,7 @@
 import React from "react";
 import { profile, stack } from "../data/mock";
 import { Cpu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SectionHeader = ({ index, title, caption, theme }) => (
     <div className="mb-10 reveal">
@@ -27,6 +28,19 @@ const About = ({theme}) => {
                     <p className="mt-5 text-zinc-400 leading-relaxed">
                         I like building systems that are <span className="text-teal-300">easy to operate</span> and <span className="text-teal-300">hard to break</span>. A lot of my work is around improving monitoring, cleaning up alerts, and automating the boring parts of running services.
                         When things do break, I care more about getting to a clear <span className="text-teal-300">root cause</span> than adding process around it.
+                    </p>
+                    <p className="mt-4 mono text-sm">
+                    <Link
+                        to="/afk"
+                        className={`border-b border-dashed transition-colors className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-transparent text-zinc-200 border border-[#2a2a31] hover:border-teal-500/60 hover:text-teal-300 transition-colors"${
+                            theme === "dark"
+                                ? "text-teal-400/80 hover:text-teal-400 border-teal-400/30 hover:border-teal-400"
+                                : "text-orange-500 hover:text-orange-600 border-orange-400/40 hover:border-orange-500"
+                        }`}
+                    >
+                        $ cd ~/afk →
+                    </Link>
+                    <span className={`ml-2 ${theme === "dark" ? "text-white/40" : "text-black/40"}`}>who I am outside work</span>
                     </p>
                     <div className="mt-8 grid sm:grid-cols-2 gap-3 mono text-sm">
                         {[
