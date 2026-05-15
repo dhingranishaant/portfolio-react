@@ -4,7 +4,7 @@ import { Cpu } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SectionHeader = ({ index, title, caption, theme }) => (
-    <div className="mb-10 reveal">
+    <div className="mb-10 reveal is-visible">
         <div className="mono text-xs text-zinc-500 mb-2">
             <span className="text-teal-400">$</span> cat sections/{title.toLowerCase()}.md
         </div>
