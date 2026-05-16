@@ -30,7 +30,9 @@ const About = ({theme}) => {
                         When things do break, I care more about getting to a clear <span className="text-teal-300">root cause</span> than adding process around it.
                     </p>
                     <p className="mt-4 mono text-sm">
-                    <Link
+
+                    {/* enable this when pics are ready */}
+                    {/* <Link
                         to="/afk"
                         className={`border-b border-dashed transition-colors className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-transparent text-zinc-200 border border-[#2a2a31] hover:border-teal-500/60 hover:text-teal-300 transition-colors"${
                             theme === "dark"
@@ -40,7 +42,7 @@ const About = ({theme}) => {
                     >
                         $ cd ~/afk →
                     </Link>
-                    <span className={`ml-2 ${theme === "dark" ? "text-white/40" : "text-black/40"}`}>who I am outside work</span>
+                    <span className={`ml-2 ${theme === "dark" ? "text-white/40" : "text-black/40"}`}>who I am outside work</span> */}
                     </p>
                     <div className="mt-8 grid sm:grid-cols-2 gap-3 mono text-sm">
                         {[
